@@ -20,7 +20,7 @@ function preload()
 {
     bkImage = loadImage("assets/background3-bw.jpg");   
     buttonImg = loadImage("assets/pushbutton-red.png");
-    data = loadJSON("../data.json", loadQuestions);
+    data = loadJSON("https://raw.githubusercontent.com/tg1625/real-or-fake/main/data.json", loadQuestions);
     classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/zCK6ikhxU/model.json');
     basicFont = loadFont("assets/FuturaLT-Condensed.ttf");
     scriptFont = loadFont("assets/Filmotype_Leader.otf");
